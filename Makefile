@@ -143,7 +143,7 @@ kafka-create:
 	@echo '__________________________________________________________'
 	@docker compose -f ./docker/docker-compose-kafka.yml --env-file .env up -d
 	@echo 'Waiting for uptime on http://localhost:8083 ...'
-	@sleep 20
+	@timeout /t 20 /nobreak >nul
 	@echo '==========================================================='
 
 kafka-create-test-topic:

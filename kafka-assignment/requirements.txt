@@ -1,0 +1,9 @@
+kafka-python
+faker
+python-dotenv
+numpy
+confluent-kafka
+avro-python3
+protobuf
+grpcio-tools
+requests
