@@ -178,6 +178,14 @@ spark-consume:
 		spark-submit \
 		/spark-scripts/spark-event-consumer.py
 
+spark-consume-purchase:
+	@echo '__________________________________________________________'
+	@echo 'Consuming purchase events ...'
+	@echo '__________________________________________________________'
+	@docker exec ${SPARK_WORKER_CONTAINER_NAME}-1 \
+		spark-submit \
+		/spark-scripts/purchase-aggregator.py
+
 datahub-create:
 	@echo '__________________________________________________________'
 	@echo 'Creating Datahub Instance ...'

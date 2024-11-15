@@ -33,6 +33,7 @@ services:
    - ../spark-scripts:/spark-scripts
    - ../scripts:/scripts
    - ../logs:/tmp
+   - ../checkpoints:/scripts/checkpoints
   depends_on:
    - dibimbing-dataeng-spark-master
 
